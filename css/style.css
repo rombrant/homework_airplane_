@@ -3,20 +3,31 @@
     padding: 0;
 }
   html,
-  body {
+  body {  
     height: 100%;
 }
+
+
+
 .wrapper {
     position: relative;
     width: 1100px;
+    height: 2080px;
     min-height: 100%;
     margin: auto;
+
+}
+
+header { 
+    width: 100%;
+    height: 77px;
+    background-color: #4b73b5;
+
 }
 
 .header {
-    position: relative;
+    width: 1100px;
     height: 77px;
-    background-color: #4b73b5;
 }
 
 .header__logo {
@@ -53,9 +64,20 @@
     float: right;
 }
 
+.title {
+    width: 500px;
+    height: 47px;
+    color: #221f1f;
+    font-family: Roboto;
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 38px;
+    padding-bottom: 20px;
+}
+
 .container {
     position: relative;
-    padding-bottom: 90px;
+    height: 2000px;
 }
 
 .sidebar {
@@ -69,8 +91,8 @@
 .main-img {
     position: absolute;
     left:199px;
-
-    
+    padding-top: 13px;
+    padding-bottom: 16px;
 }
 
 .main__content {
@@ -79,7 +101,7 @@
     left: 199px;
     right: 23px;
     width: 880px;
-    height: 1500px;
+    min-height: 100%;
 }
 
 .tariffs {
@@ -90,8 +112,14 @@
     height: 530px;
 }
 
+.tariffs__offers__img-pic {
+    display:block; 
+    margin:15px auto 25px;
+}
+
 .tariffs__offers {
     position: relative;
+    left: 0px;
     width: 250px;
     height: 456px;
     float: left;
@@ -99,43 +127,73 @@
     border: 1px solid #e8e9ed;
 }
 
+.tariffs__offers__information {
+    text-align: center;
+}
+
+.tariffs__offers__price {
+    text-align: center;
+}
+
 .feeds {
-    position:  absolute;
+    position:  relative;
     top: 600px;
     right: 23px;
     width: 880px;
     height: 724px;
 }
 
+.feeds__news__item {
+    position: relative;
+    width: 820px;
+    height: 160px;
+    padding: 28px;
+    list-style-type: none;
+}
+
+.feeds__news__item__description {
+    position: relative;
+    width: 600px;
+    height: 160px;
+    float: left;
+    padding: 20px;
+}
+
+.feeds__news__item__avatar {
+    position: relative;
+    float: left;
+}
+
 .pagination {
     position: relative;
-    top: 20px;
-    left: 100px;
+    top: 10px;
+    left: 270px;
     width: 600px;
     height: 50px;
+    text-align: center;
 }
 
 
-.pagination__display {
-    position:absolute;
-    right: 550px;
-    width: 150px;
+.pagination__display { 
+    position: relative;
+    float: left;
+    width: 120px;
     height: 20px;
 }
 
 .pagination__controlls {
     position: relative;
+    float: left;
     left: 30px;
     width: 450px;
-    height: 40px;
+    height: 20px;
 }
 
 .pagination__controlls__list {
-    position: absolute;
-    left: 33px;
-    bottom: 10px;
-    width: 200px;
-    height: 30px;
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 16.5px;
 }
 
 .pagination__controlls__list__item {
@@ -146,26 +204,42 @@
     list-style-type: none;
 }
 
+.pagination__controlls__item__prev {
+    position: relative;
+    float: left;
+}
+
 .pagination__controlls__item__next {
     position: relative;
-    left: 170px;
+    float: left;
 }
 
 
 .footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    position: relative;
     width: 1100px;
-    height: 80px;
-
-.social {
-    position: absolute;
+    height: 0px;
+    margin: 0 auto;
     float: left;
+    text-align: center;
+    padding-bottom: 80px;
+    background-color: #4b73b5;
+    list-style-type: none;
+
+footer__social {
+    position: relative;
+    width: 200px;
+    float: left;
+    list-style-type: none;
 }
 .info {
     position: absolute;
-    right: 845px;
-    width: 240px;
+    width: 20%;
     float: left;
+}
+
+footer__logo {
+    position: absolute;
+    width: 200px;
+    margin: 0 auto;
 }
