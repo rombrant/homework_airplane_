@@ -10,7 +10,7 @@
 .wrapper {
     position: relative;
     width: 1100px;
-    height: 2080px;
+    height: 1880px;
     min-height: 100%;
     margin: auto;
 
@@ -84,7 +84,7 @@ button {
 
 .container {
     position: relative;
-    height: 2000px;
+    height: 1800px;
 }
 
 .sidebar {
@@ -242,14 +242,20 @@ button {
     list-style-type: none;
 }
 
+.pagination__controlls__list__link {
+    text-decoration: none;
+}
+
 .pagination__controlls__item__prev {
     position: relative;
     float: left;
+    text-decoration: none;
 }
 
 .pagination__controlls__item__next {
     position: relative;
     float: left;
+    text-decoration: none;
 }
 
 
