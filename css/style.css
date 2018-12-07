@@ -40,7 +40,7 @@ header {
 
 .header__contacts {  
     position: absolute;
-    top: 20px;
+    top: 10px;
     right: 21px;      
     left: 906px;
     width: 173px;
@@ -149,6 +149,10 @@ button {
     height: 530px;
 }
 
+.tariffs__offers__img {
+    height: 75px;
+}
+
 .tariffs__offers__img-pic {
     display:block; 
     margin:15px auto 25px;
@@ -167,10 +171,49 @@ button {
 
 .tariffs__offers__information {
     text-align: center;
+    color: #221f1f;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.tariffs__offers__information-name {
+    font-size: 14px;
+    letter-spacing: 2.88px;
 }
 
 .tariffs__offers__price {
-    text-align: center;
+    display: inline;
+}
+
+.tariffs__offers__price-currency {
+    float: left;
+    text-align: right;
+    color: #202020;
+    font-family: Roboto;
+    font-size: 20px;
+    width: 120px;
+    height: 30px;
+    line-height: 175px;
+}
+
+.tariffs__offers__price-number {
+    float: left;
+    color: #202020;
+    font-family: Roboto;
+    font-size: 30px;
+    width: 120px;
+    letter-spacing: -1.07px;
+    line-height: 173.58px;
+}
+
+.tariffs__offers__information-tagline {
+    font-family: Roboto-light;
+}
+
+.tariffs__offers__information-description {
+    font-family: Roboto-light;
 }
 
 .feeds {
@@ -194,7 +237,7 @@ button {
     width: 600px;
     height: 160px;
     float: left;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 .feeds__news__item__avatar {
@@ -202,10 +245,30 @@ button {
     float: left;
 }
 
+.feeds__news__item__time {
+    color: #656464;
+    font-family: "Roboto-light";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.feeds__news__item__headline {
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.feeds__news__item__content {
+    font-family: "Roboto-Light";
+    font-weight: 300;
+    line-height: 30px;
+}
+
 .pagination {
     position: relative;
     top: 10px;
-    left: 270px;
+    left: 250px;
     width: 600px;
     height: 50px;
     text-align: center;
@@ -215,8 +278,15 @@ button {
 .pagination__display { 
     position: relative;
     float: left;
-    width: 120px;
+    width: 140px;
     height: 20px;
+    width: 110px;
+    height: 13px;
+    color: #656464;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
 }
 
 .pagination__controlls {
@@ -232,14 +302,21 @@ button {
     float: left;
     width: 140px;
     height: 16.5px;
+
 }
 
 .pagination__controlls__list__item {
     position: relative;
     float: left;
-    width: 20px;
-    height: 20px;
+    margin-left: 9px;
+    width: 9px;
+    height: 10px;
     list-style-type: none;
+    color: #221f1f;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
 }
 
 .pagination__controlls__list__link {
@@ -250,12 +327,29 @@ button {
     position: relative;
     float: left;
     text-decoration: none;
+    margin-left: 9px;
+    width: 9px;
+    height: 10px;
+    list-style-type: none;
+    color: #221f1f;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
 }
 
 .pagination__controlls__item__next {
     position: relative;
     float: left;
     text-decoration: none;
+    width: 9px;
+    height: 10px;
+    list-style-type: none;
+    color: #221f1f;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
 }
 
 
@@ -273,16 +367,24 @@ button {
     position: absolute;
     left: 900px;
     width: 200px;
+    height: 47px;
     float: left;
     bottom: 20px;
     color: #ffffff;
-    font-family: Roboto;
+}
+
+.footer__social__head{
+    color: #ffffff;
+    font-family: Roboto-light;
+    font-size: 14px;
+    float: left;
 }
 
 .footer__social__list {
     position: relative;
     float: left;
-    width: 250px;
+    margin-top: 9px;
+    width: 190px;
     height: 20px;
     list-style-type: none;
 }
@@ -290,7 +392,7 @@ button {
 .footer__social__list__item {
     position: relative;
     float: left;
-    margin-right: 17px;
+    margin-right: 9px;
     width: 20px;
     height: 20px;
 }
