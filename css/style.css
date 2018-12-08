@@ -232,20 +232,20 @@ button {
 
 .feeds__news__item__time {
     color: #656464;
-    font-family: "Roboto-light";
+    font-family: Roboto-light;
     font-size: 14px;
     font-weight: 300;
     line-height: 21px;
 }
 
 .feeds__news__item__headline {
-    font-family: "Roboto";
+    font-family: Roboto;
     font-weight: 700;
     line-height: 21px;
 }
 
 .feeds__news__item__content {
-    font-family: "Roboto-Light";
+    font-family: Roboto-Light;
     font-weight: 300;
     line-height: 30px;
 }
@@ -403,12 +403,12 @@ button {
 }
 
 .footer__info-link {
-    font-family: "Roboto-light";
+    font-family: Roboto-light;
     font-weight: 700;
     text-decoration: underline;
 }
 .footer__info-autor {
-    font-family: "Roboto-light";
+    font-family: Roboto-light;
     font-weight: 700;
 }
 
