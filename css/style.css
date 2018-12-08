@@ -305,6 +305,8 @@ button {
 }
 
 .pagination__controlls__list__link {
+    color: #221f1f;
+    font-family: Roboto;
     text-decoration: none;
 }
 
