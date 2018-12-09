@@ -8,28 +8,25 @@
 }
 
 .wrapper {
-    position: relative;
-    width: 1100px;
-    height: 1740px;
+    min-width:1100px;
+    height: 100%;
     min-height: 100%;
     margin: 0 auto;
 
 }
 
-header { 
+.header {
     width: 100%;
     height: 77px;
     background-color: #4b73b5;
-
 }
 
-.header {
-    position: relative;
+.header__container {
     width: 1100px;
-    height: 77px;
+    margin: 0 auto;
 }
 
-.header__logo {
+.header__container-logo {
     float: left;
     max-width: 130px;
     margin-top: 21px;
@@ -38,13 +35,13 @@ header {
 }
 
 
-.header__contacts {  
+.header__container-contacts {  
     float: left;
     margin-left: 769px; 
     margin-top: 20px;
 }
 
-.header__contacts__phone {
+.header__container-contacts__phone {
     width: 173px;
     height: 22px;
     color: #ffffff;
@@ -54,7 +51,7 @@ header {
     text-transform: uppercase;
 }
 
-.header__contacts-button {
+.header__container-contacts-button {
     margin-left: 70px;
 }
 
@@ -63,10 +60,13 @@ button {
     border-style: none;
 }
 
+.container {
+    min-height: 100%;
+    margin: 0 auto;
+    width: 1100px;
+}
+
 .title {
-    position: absolute;
-    width: 550px;
-    height: 47px;
     color: #221f1f;
     font-family: Roboto;
     font-size: 49px;
@@ -75,46 +75,77 @@ button {
     padding-bottom: 20px;
 }
 
-.container {
-    position: relative;
-    height: 1660px;
-}
+
 
 .sidebar {
-    position: absolute;
     float: left;
+    margin-left: -134px;
     margin-top: 18px;
-    margin-left: 18px;
     padding-top: 16px;
     width: 15%;
     height: 130px;
     color: #221f1f;
     font-family: Roboto;
     font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2.4px;
-}
-
-.sidebar-menu-list-item{
-    height: 20px;
-    padding-bottom: 35px;
     list-style-type: none;
-}
-
-.sidebar-menu-list-item-link {
     text-decoration: none;
 }
 
-.sidebar-menu-list-item-link-icon-logo {
-    float: left;
-    width: 17px;
-    height: 18px;
+.menu__list {
+    list-style-type: none;
+}
+.menu__item {
+    margin-bottom: 30px;
 }
 
-.sidebar-menu-list-item-link-title{
-    float: left;
-    padding-left: 20px;
-    line-height: 22px;
+.menu__link {
+    padding-bottom: 0px;
+    color: #4b73b5;
+    font-family: Roboto;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.menu__link:hover{
+    color:#221f1f;
+}
+
+.menu__link:before {
+    content: "";
+    padding-right: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 18px;
+    background: center center no-repeat;
+}
+
+.menu__link--plane:before {
+    background-image: url('./../img/main_icon.png')
+}
+
+.menu__link--feedback:before {
+    background-image: url('./../img/feed_icon.png')
+}
+
+.menu__link--crew:before {
+    background-image: url('./../img/team_icon.png')
+}
+
+.menu__item--active .menu__link--plane {
+    color:#221f1f;
+}
+
+.menu__item--active .menu__link--feedback {
+    color:#221f1f;
+}
+
+.menu__item--active .menu__link--crew {
+    color:#221f1f;
 }
 
 
@@ -124,6 +155,7 @@ button {
 
 .main__content {
     float: left;
+    margin-top: -164px;
     margin-left: 200px;
     width: 80%;
     min-height: 100%;
@@ -131,8 +163,6 @@ button {
 
 .tariffs {
     float: left;
-    width: 760px;
-    height: 530px;
 }
 
 .tariffs__offers__img {
@@ -145,11 +175,7 @@ button {
 }
 
 .tariffs__offers {
-    position: relative;
-    top: 80px;
-    left: 0px;
     width: 250px;
-    height: 456px;
     float: left;
     border-radius: 5px;
     border: 1px solid #e8e9ed;
@@ -206,67 +232,55 @@ button {
     float: left;
     margin-top: 60px;
     width: 880px;
-    height: 824px;
 }
 
 .feeds__news__item {
-    position: relative;
+    float: left;
     width: 820px;
-    height: 160px;
     margin-top: 62px;
     list-style-type: none;
 }
 
 .feeds__news__item__description {
-    position: relative;
     width: 600px;
-    height: 160px;
     float: left;
     padding-left: 20px;
 }
 
 .feeds__news__item__avatar {
-    position: relative;
     float: left;
 }
 
 .feeds__news__item__time {
     color: #656464;
-    font-family: Roboto-light;
+    font-family: "Roboto-light";
     font-size: 14px;
     font-weight: 300;
     line-height: 21px;
 }
 
 .feeds__news__item__headline {
-    font-family: Roboto;
+    font-family: "Roboto";
     font-weight: 700;
     line-height: 21px;
 }
 
 .feeds__news__item__content {
-    font-family: Roboto-Light;
+    font-family: "Roboto-Light";
     font-weight: 300;
     line-height: 30px;
 }
 
 .pagination {
     float: left;
-    margin-top: 30px;
-    margin-left: 250px;
-    width: 600px;
-    height: 50px;
+    margin-top: 65px;
+    margin-left: 200px;
     text-align: center;
 }
 
 
 .pagination__display { 
-    position: relative;
     float: left;
-    width: 140px;
-    height: 20px;
-    width: 110px;
-    height: 13px;
     color: #656464;
     font-family: Roboto;
     font-size: 14px;
@@ -277,25 +291,16 @@ button {
 .pagination__controlls {
     position: relative;
     float: left;
-    left: 20px;
-    width: 450px;
-    height: 20px;
 }
 
 .pagination__controlls__list {
     position: relative;
     float: left;
-    width: 140px;
-    height: 16.5px;
-
 }
 
 .pagination__controlls__list__item {
-    position: relative;
     float: left;
-    margin-left: 9px;
-    width: 9px;
-    height: 10px;
+    margin-left: 20px;
     list-style-type: none;
     color: #221f1f;
     font-family: Roboto;
@@ -310,77 +315,78 @@ button {
     text-decoration: none;
 }
 
-.pagination__controlls__item__prev {
-    position: relative;
-    float: left;
-    text-decoration: none;
-    margin-left: 9px;
-    width: 9px;
-    height: 10px;
-    list-style-type: none;
-    color: #221f1f;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
-}
-
-.pagination__controlls__item__next {
-    position: relative;
-    float: left;
-    text-decoration: none;
-    width: 9px;
-    height: 10px;
-    list-style-type: none;
-    color: #221f1f;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 21px;
-}
-
-
-.footer {
-    position: absolute;
-    width: 1100px;
-    height: 80px;
-    margin: 0 auto;
-    float: left;
-    text-align: center;
+.pagination__controlls__list__link--active {
+    border-radius: 5px;
+    border: 6px solid #4b73b5;
     background-color: #4b73b5;
 }
 
-.footer__social {
+.pagination__controlls__item__prev {
     float: left;
+    margin-left: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    color: #221f1f;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.pagination__controlls__item__prev--active {
+    color: #bdbcbc;
+}
+
+.pagination__controlls__item__next {
+    float: left;
+    margin-left: 20px;
+    text-decoration: none;
+    list-style-type: none;
+    color: #221f1f;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+}
+
+.footer {
+    float: left;
+    width: 100%;
+    min-height: 77px;
+    margin-top: 60px;
+    background-color: #4b73b5;
+}
+
+.footer__container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.footer__container-social {
+    float: right;
+    width: 160px;
     margin-top: 20px;
-    margin-left: 275px;
-    width: 155px;
-    height: 47px;
-    bottom: 20px;
+    margin-right: 20px;
     color: #ffffff;
 }
 
-.footer__social__head{
+.footer__container-social__head {
     color: #ffffff;
     font-family: Roboto-light;
     font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
     float: left;
 }
 
-.footer__social__list {
+.footer__container-social__head__list {
     float: left;
-    margin-top: 9px;
-    width: 145px;
-    height: 20px;
     list-style-type: none;
 }
 
-.footer__social__list__item {
-    position: relative;
+.footer__container-social__head__list__item {
     float: left;
     margin-right: 9px;
-    width: 20px;
-    height: 20px;
 }
 
 .logo {
@@ -389,25 +395,24 @@ button {
     margin-left: 270px;
 }
 
-.footer__info {
+.footer__container-info {
     float: left;
-    margin-top: 18px;
-    margin-left: 19px;
     width: 236px;
-    height: 50px;
+    margin-top: 15px;
+    margin-left: 18px;
     color: #ffffff;
-    font-family: Roboto;
+    font-family: Roboto-light;
     font-size: 14px;
     font-weight: 300;
     line-height: 18px;
 }
 
-.footer__info-link {
+.footer__container-info-link {
     font-family: Roboto-light;
     font-weight: 700;
     text-decoration: underline;
 }
-.footer__info-autor {
+.footer__container-info-autor {
     font-family: Roboto-light;
     font-weight: 700;
 }
