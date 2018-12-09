@@ -3,21 +3,21 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Bold_1.ttf');
+    src: url('homework_airplane_/fonts/Roboto-Bold_1.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto-light';
-    src: url('Roboto-Light_1.ttf');
+    src: url('homework_airplane_/fonts/Roboto-LightItalic_1.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto-Italic';
-    src: url('Roboto-LightItalic_1.ttf');
+    src: url('homework_airplane_/fonts/Roboto-Light_1.ttf');
     font-weight: normal;
     font-style: normal;
 }
