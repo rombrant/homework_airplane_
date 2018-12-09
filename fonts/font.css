@@ -10,14 +10,14 @@
 
 @font-face {
     font-family: 'Roboto-light' helvetica, arial, sans-serif;
-    src: url('Roboto-light_1.ttf');
+    src: url('Roboto-Light_1.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto-Italic' helvetica, arial, sans-serif;
-    src: url('Roboto-lightItalic_1.ttf');
+    src: url('Roboto-LightItalic_1.ttf');
     font-weight: normal;
     font-style: normal;
 }
