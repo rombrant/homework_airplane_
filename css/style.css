@@ -36,8 +36,8 @@
 
 
 .header__container-contacts {  
-    float: left;
-    margin-left: 769px; 
+    float: right;
+    margin-right: 20px; 
     margin-top: 20px;
 }
 
@@ -83,7 +83,6 @@ button {
     margin-top: 18px;
     padding-top: 16px;
     width: 15%;
-    height: 130px;
     color: #221f1f;
     font-family: Roboto;
     font-size: 12px;
@@ -154,9 +153,7 @@ button {
 }
 
 .main__content {
-    float: left;
-    margin-top: -164px;
-    margin-left: 200px;
+    float: right;
     width: 80%;
     min-height: 100%;
 }
@@ -182,6 +179,7 @@ button {
 }
 
 .tariffs__offers__information {
+    float: left;
     text-align: center;
     color: #221f1f;
     font-family: Roboto;
