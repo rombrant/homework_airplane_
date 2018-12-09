@@ -131,6 +131,11 @@ button {
     background-image: url('./../img/feed_icon.png')
 }
 
+.menu__link--feedback:before:hover {
+    background-image: url('./../img/feed_icon.png');
+    color: #221f1f;
+}
+
 .menu__link--crew:before {
     background-image: url('./../img/team_icon.png')
 }
@@ -193,9 +198,11 @@ button {
 .tariffs__offers {
     width: 250px;
     float: left;
+    margin-bottom: 10px;
     border-radius: 5px;
     border: 1px solid #e8e9ed;
 }
+
 
 .tariffs__offers__information {
     float: left;
@@ -249,8 +256,6 @@ button {
 
 .feeds {
     margin-top: 60px;
-/*  float: left;
-    width: 880px;*/
 }
 
 .feeds__news__item {
@@ -331,12 +336,20 @@ button {
 }
 
 .pagination__controlls__list__link {
-    color: #221f1f;
+    color: #4b73b5;
     font-family: Roboto;
     text-decoration: none;
 }
 
+.pagination__controlls__list__link:hover {
+    color: #221f1f;
+    border-radius: 5px;
+    border: 6px solid #4b73b5;
+    background-color: #4b73b5;
+}
+
 .pagination__controlls__list__link--active {
+    color: #221f1f;
     border-radius: 5px;
     border: 6px solid #4b73b5;
     background-color: #4b73b5;
@@ -358,6 +371,7 @@ button {
     color: #bdbcbc;
 }
 
+
 .pagination__controlls__item__next {
     float: left;
     margin-left: 20px;
@@ -369,6 +383,7 @@ button {
     font-weight: 700;
     line-height: 21px;
 }
+
 
 .footer {
     flex: 0 0 auto;
