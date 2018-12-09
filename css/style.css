@@ -411,9 +411,12 @@ button {
     font-family: Roboto-light;
     font-weight: 700;
     text-decoration: underline;
+    color: #e8e9ed;
 }
 .footer__container-info-autor {
     font-family: Roboto-light;
     font-weight: 700;
+    text-decoration: none;
+    color: #e8e9ed;
 }
 
