@@ -225,7 +225,9 @@ button {
 }
 
 .tariffs__offers__information-description {
+    text-align: left;
     font-family: Roboto-light;
+    padding-left: 15px;
 }
 
 .feeds {
