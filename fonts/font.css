@@ -3,21 +3,21 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: url('https://github.com/rombrant/homework_airplane_/blob/master/fonts/Roboto-Bold_1.ttf');
+    src: url('Roboto-Bold_1.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto-light';
-    src: url('https://github.com/rombrant/homework_airplane_/blob/master/fonts/Roboto-Light_1.ttf');
+    src: url('Roboto-Light_1.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto-Italic';
-    src: url('https://github.com/rombrant/homework_airplane_/blob/master/fonts/Roboto-LightItalic_1.ttf');
+    src: url('Roboto-LightItalic_1.ttf');
     font-weight: normal;
     font-style: normal;
 }
