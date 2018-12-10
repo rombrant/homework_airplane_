@@ -344,8 +344,8 @@ button {
 .pagination__controlls__list__link:hover {
     color: #221f1f;
     border-radius: 5px;
-    border: 6px solid #4b73b5;
-    background-color: #4b73b5;
+ /*   border: 6px solid #4b73b5;
+    background-color: #4b73b5;*/
 }
 
 .pagination__controlls__list__link--active {
