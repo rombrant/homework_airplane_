@@ -8,6 +8,10 @@
     display: flex;
     flex-flow: column wrap;
 }
+.feedback__list {
+    margin-bottom: 20px;
+}
+
 
 .feedback__avatar--none {
     width: 160px;

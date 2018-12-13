@@ -75,7 +75,7 @@ button {
     line-height: 38px;
 }
 .title-tariffs {
-    margin-left: 70px;
+    margin-left: 50px;
 }
 
 
@@ -85,6 +85,7 @@ button {
     display: inline-block;
     float: left;
     width: 130px;
+    margin-left: 18px;
     margin-top: 48px;
     color: #221f1f;
     font-family: Roboto;
@@ -160,7 +161,7 @@ button {
 }
 
 .section-img__main {
-    margin-left: 65px;
+    margin-left: 50px;
     width: 900px;
     height: 300px;
 }
@@ -197,7 +198,7 @@ button {
     margin:15px auto 25px;
 }
 .tariffs {
-    margin-left: 70px;
+    margin-left: 50px;
     display: flex;
     flex-flow: row wrap;
 }
@@ -267,19 +268,28 @@ button {
     display: flex;
     flex-flow: column;
     margin-top: 50px;
-    margin-left: 70px;
+    margin-left: 50px;
+}
+
+.feeds__news {
+    margin-bottom: 20px;
 }
 
 .feeds__news__item {
     float: left;
-    width: 820px;
-    margin-top: 40px;
+    width: 900px;
+    margin-top: 48px;
     list-style-type: none;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.feeds__news__item--active {
+    border-bottom: none;
 }
 
 .feeds__news__item__description {
-    width: 600px;
-    float: left;
+    width: 700px;
+    display: inline-block;
     padding-left: 20px;
 }
 
@@ -312,7 +322,7 @@ button {
 
 .pagination {
     float: left;
-    margin-top: 70px;
+    margin-top: 30px;
     margin-left: 200px;
     text-align: center;
 }
