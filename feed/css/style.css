@@ -40,7 +40,7 @@
     font-family: Roboto-light;
 }
 .title-feedback {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: start;
     width: 600px;
 }
@@ -57,6 +57,12 @@
     height: 45px;
     margin-bottom: 41px;
     margin-top: 5px;
+    border-style: none;
+    opacity: 0.5;
+    color: #221f1f;
+    font-family: Roboto-light;
+    font-size: 17px;
+    font-weight: 300;
 }
 .feedback-form__profile-block {
     display: inline-block;
@@ -67,6 +73,12 @@
     height: 45px;
     margin-bottom: 41px;
     margin-top: 5px;
+    border-style: none;
+    opacity: 0.5;
+    color: #221f1f;
+    font-family: Roboto-light;
+    font-size: 17px;
+    font-weight: 300;
 }
 .feedback-form__comment-block {
     display: inline-block;
@@ -77,6 +89,7 @@
     height: 90px;
     margin-bottom: 20px;
     margin-top: 5px;
+    border: 1px solid #4b73b5;
 }
 .feedback-form-send-form {
     display: inline-block;
@@ -89,17 +102,24 @@
 .admit-avatar__question {
     margin-bottom: 7px;
 }
+.admit-avatar__answear {
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    vertical-align: middle;
+}
 .admit-avatar__yes {
+    float: left;
     width: 20px;
     height: 20px;
     margin-right: 4px;
     background-color: #4b73b5;
 }
 .admit-avatar__no {
+    float: left;
     width: 20px;
     height: 20px;
     margin-right: 4px;
-    margin-left: 20px;
     background-color: #4b73b5;
 }
 .send-form-button {
@@ -111,8 +131,24 @@
     font-family: Roboto-light;
     font-size: 12px;
     font-weight: 500;
-    line-height: 54px;
+    line-height: 35px;
     text-transform: uppercase;
     letter-spacing: 2.2px;
-    align-content: center;
+    vertical-align: middle;
+}
+
+.send-form-button-name {
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+}
+.send-form-button-name::after {
+    content: "";
+    padding-right: 10px;
+    display: inline-block;
+    vertical-align: sub;
+    width: 15px;
+    height: 14px;
+    background: center center no-repeat;
+    background-image: url('../img/plane_button.png');
 }

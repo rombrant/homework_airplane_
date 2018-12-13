@@ -131,10 +131,6 @@ button {
     background-image: url('./../img/feed_icon.png')
 }
 
-.menu__link--feedback:before:hover {
-    background-image: url('./../img/feed_icon.png');
-    color: #221f1f;
-}
 
 .menu__link--crew:before {
     background-image: url('./../img/team_icon.png')
