@@ -1,7 +1,8 @@
 .page {
     display: flex;
     flex-direction: column;
-    margin-top: 34px;
+    margin-top: 54px;
+    margin-left: 200px;
 }
 .crew {
     display: flex;

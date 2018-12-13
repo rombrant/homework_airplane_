@@ -74,14 +74,18 @@ button {
     font-weight: 700;
     line-height: 38px;
 }
+.title-tariffs {
+    margin-left: 70px;
+}
 
 
 
 .sidebar {
+    flex: 1 0 auto;
+    display: inline-block;
     float: left;
-    margin-top: 18px;
-    padding-top: 16px;
-    width: 15%;
+    width: 130px;
+    margin-top: 48px;
     color: #221f1f;
     font-family: Roboto;
     font-size: 12px;
@@ -114,9 +118,9 @@ button {
 
 .menu__link:before {
     content: "";
-    padding-right: 30px;
+    padding-right: 5%;
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: sub;
     width: 24px;
     height: 18px;
     background: center center no-repeat;
@@ -148,18 +152,21 @@ button {
 }
 
 .main__content {
-    float: right;
-    width: 85%;
+    /*width: 85%;*/
+    margin-top: 14px;
     min-height: 100%;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .section-img__main {
-    width: 950px;
+    margin-left: 65px;
+    width: 900px;
     height: 300px;
 }
 
 .img {
-    margin-top: 15px;
+    margin-top: 55px;
     margin-bottom: 20px;
     height: 75px;
 }
@@ -189,12 +196,18 @@ button {
     display:block; 
     margin:15px auto 25px;
 }
+.tariffs {
+    margin-left: 70px;
+    display: flex;
+    flex-flow: row wrap;
+}
 
 .tariffs__offers {
     width: 250px;
     float: left;
+    margin-left: 12px;
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 22px;
     border-radius: 5px;
     border: 1px solid #e8e9ed;
 }
@@ -251,7 +264,10 @@ button {
 }
 
 .feeds {
-    margin-top: 60px;
+    display: flex;
+    flex-flow: column;
+    margin-top: 50px;
+    margin-left: 70px;
 }
 
 .feeds__news__item {
@@ -291,11 +307,12 @@ button {
     font-family: "Roboto-Light";
     font-weight: 300;
     line-height: 25px;
+    font-size: 18px;
 }
 
 .pagination {
     float: left;
-    margin-top: 55px;
+    margin-top: 70px;
     margin-left: 200px;
     text-align: center;
 }

@@ -1,11 +1,14 @@
+.page {
+    float: right;
+    /*margin-left: 200px;*/
+    margin-top: 54px;
+    width: 900px;
+}
 .feedback {
     display: flex;
     flex-flow: column wrap;
 }
-.title-feed {
-    margin-top: 34px;
-    padding-bottom: -20px;
-}
+
 .feedback__avatar--none {
     width: 160px;
     height: 160px;
