@@ -126,8 +126,29 @@
                     <div class="faq__info">Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить заявку на сайте или же позвонить по номеру круглосуточной поддержки 8 (800) 00-392-10.</div>
                 </section>
                 <section class="feedback-form">
-                    <form class="feedback-form__input">
-                            <h3 class="title">Оставить отзывы</h3>
+                    <form class="feedback-form__input" id="feedback-form-id">
+                        <h3 class="title title-feedback">Оставить отзывы</h3>
+                        <div class="input-block">
+                            <div class="feedback-form__name-block">
+                                <p class="feedback-form__name">Ваше имя</p>
+                                <input class="feedback-form__input-name" placeholder="" name="user" form="feedback-form-id">
+                            </div>
+                            <div class="feedback-form__profile-block">
+                                <p class="feedback-form__profile">Ссылка на профиль VK</p>
+                                <input class="feedback-form__input-profile" placeholder="" name="profile" form="feedback-form-id">
+                            </div>
+                            <div class="feedback-form__comment-block">
+                                <p class="feedback-form__comment">Текст отзыва</p>
+                                <input class="feedback-form__input-comment" placeholder="" name="comment" form="feedback-form-id">
+                            </div>
+                            <div class="admit-avatar">
+                                <p class="admit-avatar__question">Отображать фото в отзыве?</p>
+                                <input class="admit-avatar__yes" type="radio" form="feedback-form-id" value="yes">Да <input class="admit-avatar__no" type="radio" form="feedback-form-id" value="no">Нет
+                            </div>
+                            <div class="feedback-form__send-form">
+                                <button class="send-form-button" type="button">отправить</button>
+                            </div>
+                        </div>
                     </form>
                 </section>
             </main>
