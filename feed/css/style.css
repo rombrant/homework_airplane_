@@ -4,6 +4,7 @@
 }
 .title-feed {
     margin-top: 34px;
+    padding-bottom: -20px;
 }
 .feedback__avatar--none {
     width: 160px;
