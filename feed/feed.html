@@ -117,59 +117,61 @@
             </main>
         </div>
     </div>
-    <section class="faq">
-        <div class="faq__info">Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить заявку на сайте или же позвонить по номеру круглосуточной поддержки 8 (800) 00-392-10.</div>
-    </section>
-    <section class="feedback-form">
-        <form class="feedback-form__input" id="feedback-form-id">
-            <h3 class="title title-feedback">Оставить отзывы</h3>
-            <div class="input-block">
-                <div class="feedback-form__social-block">
-                    <div class="name-block">
-                        <label id="feedback-form-id" class="feedback-form__name">Ваше имя</label>
-                        <input class="feedback-form__input-name" placeholder="Ваше имя" name="user" form="feedback-form-id">
+    <div class="wrapper--feed">
+        <section class="faq">
+            <div class="faq__info">Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для этого можно оставить заявку на сайте или же позвонить по номеру круглосуточной поддержки 8 (800) 00-392-10.</div>
+        </section>
+        <section class="feedback-form">
+            <form class="feedback-form__input" id="feedback-form-id">
+                <h3 class="title title-feedback">Оставить отзывы</h3>
+                <div class="input-block">
+                    <div class="feedback-form__social-block">
+                        <div class="name-block">
+                            <label id="feedback-form-id" class="feedback-form__name">Ваше имя</label>
+                            <input class="feedback-form__input-name" placeholder="Ваше имя" name="user" form="feedback-form-id">
+                        </div>
+                        <div class="profile-block">
+                            <label id="feedback-form-id" class="feedback-form__profile">Ссылка на профиль VK</label>
+                            <input class="feedback-form__input-profile" placeholder="vk.com/example" name="profile" form="feedback-form-id">
+                        </div>
                     </div>
-                    <div class="profile-block">
-                        <label id="feedback-form-id" class="feedback-form__profile">Ссылка на профиль VK</label>
-                        <input class="feedback-form__input-profile" placeholder="vk.com/example" name="profile" form="feedback-form-id">
+                    <div class="feedback-form__comment-block">
+                        <label id="feedback-form-id" class="feedback-form__comment">Текст отзыва</label>
+                        <textarea class="feedback-form__input-comment" placeholder="" name="comment" form="feedback-form-id"></textarea>
+                    </div>
+                    <div class="admit-avatar">
+                        <label id="feedback-form-id" class="admit-avatar__question">Отображать фото в отзыве?</label>
+                        <div class="avatar-radio-block">
+                            <div class="admit-avatar__answear"><input class="admit-avatar__yes" type="radio" form="feedback-form-id" value="yes">Да</div> <div class="admit-avatar__answear"><input class="admit-avatar__no" type="radio" form="feedback-form-id" value="no">Нет</div>
+                        </div>
+                    </div>
+                    <div class="feedback-form__send-form">
+                        <button id="feedback-form-id" class="send-form-button" type="submit"><div class="send-form-button-name">отправить</div></button>
                     </div>
                 </div>
-                <div class="feedback-form__comment-block">
-                    <label id="feedback-form-id" class="feedback-form__comment">Текст отзыва</label>
-                    <textarea class="feedback-form__input-comment" placeholder="" name="comment" form="feedback-form-id"></textarea>
+            </form>
+        </section>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__container-info">
+                    Сделано с любовью и старанием на курсе "HTML + CSS" в <a href="#" class="footer__container-info-link">Loftschool</a>.
+                    Автор работы: <a href="#" class="footer__container-info-autor">Сафин Роман</a>
                 </div>
-                <div class="admit-avatar">
-                    <label id="feedback-form-id" class="admit-avatar__question">Отображать фото в отзыве?</label>
-                    <div class="avatar-radio-block">
-                        <div class="admit-avatar__answear"><input class="admit-avatar__yes" type="radio" form="feedback-form-id" value="yes">Да</div> <div class="admit-avatar__answear"><input class="admit-avatar__no" type="radio" form="feedback-form-id" value="no">Нет</div>
-                    </div>
-                </div>
-                <div class="feedback-form__send-form">
-                    <button id="feedback-form-id" class="send-form-button" type="submit"><div class="send-form-button-name">отправить</div></button>
-                </div>
-            </div>
-        </form>
-    </section>
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__container-info">
-                Сделано с любовью и старанием на курсе "HTML + CSS" в <a href="#" class="footer__container-info-link">Loftschool</a>.
-                Автор работы: <a href="#" class="footer__container-info-autor">Сафин Роман</a>
-            </div>
 
-            <a class="logo" href="index.html"><img class ="logo__img" src="../img/logo_header.png"  alt="логотип"></a>
+                <a class="logo" href="index.html"><img class ="logo__img" src="../img/logo_header.png"  alt="логотип"></a>
 
-            <div class="footer__container-social">
-                <h3 class="footer__container-social__head">Наши социальные сети</h3>
-                <ul class="footer__container-social__head__list">
-                    <li class="footer__container-social__head__list__item"><a class="footer__container-social__head__list__item__link" href="https://vk.com/" ><img src="../img/vk.png" class="footer__container-social__head-list__item__link__img-social" alt="ВК"></a></li>
-                    <li class="footer__container-social__head__list__item"><a class="footer__container-social__head__list__item__link" href="https://facebook.com/" ><img src="../img/fb.png" class="footer__container-social__head-list__item__link__img-social" alt="FB"></a></li>
-                    <li class="footer__container-social__head__list__item"><a class="footer__container-social__head__list__item__link" href="https://mail.google.com/" ><img src="../img/gm.png" class="footer__container-social__head-list__item__link__img-social" alt="g+"></a></li>
-                    <li class="footer__container-social__head__list__item"><a class="footer__container-social__head__list__item__link" href="https://twitter.com/" ><img src="../img/twit.png" class="footer__container-social__head-list__item__link__img-social" alt="twit"></a></li>
-                    <li class="footer__container-social__head__list__item"><a class="footer__container-social__head__list__item__link" href="#" ><img src="../img/email.png" class="footer__container-social__head-list__item__link__img-social" alt="mail"></a></li>
-                </ul>
+                <div class="footer__container-social">
+                    <h3 class="footer__container-social__head">Наши социальные сети</h3>
+                    <ul class="footer__container-social__head__list">
+                        <li class="footer__container-social__head__list__item"><a class="footer__container-social__head__list__item__link" href="https://vk.com/" ><img src="../img/vk.png" class="footer__container-social__head-list__item__link__img-social" alt="ВК"></a></li>
+                        <li class="footer__container-social__head__list__item"><a class="footer__container-social__head__list__item__link" href="https://facebook.com/" ><img src="../img/fb.png" class="footer__container-social__head-list__item__link__img-social" alt="FB"></a></li>
+                        <li class="footer__container-social__head__list__item"><a class="footer__container-social__head__list__item__link" href="https://mail.google.com/" ><img src="../img/gm.png" class="footer__container-social__head-list__item__link__img-social" alt="g+"></a></li>
+                        <li class="footer__container-social__head__list__item"><a class="footer__container-social__head__list__item__link" href="https://twitter.com/" ><img src="../img/twit.png" class="footer__container-social__head-list__item__link__img-social" alt="twit"></a></li>
+                        <li class="footer__container-social__head__list__item"><a class="footer__container-social__head__list__item__link" href="#" ><img src="../img/email.png" class="footer__container-social__head-list__item__link__img-social" alt="mail"></a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>   
 </body>
 </html>
