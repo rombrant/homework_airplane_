@@ -32,9 +32,29 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    height: 160px;
 }
-.members__photo .photo:hover {
-    background-image: url('../img/alex_hover.png')
+
+img.photo:hover {
+    opacity: 0;
+}
+.members__photo-yurii:hover {
+    background-image: url('../img/yrii-hover.png');
+}
+.members__photo-elena:hover {
+    background-image: url('../img/elena-hover.png');
+}
+.members__photo-elina:hover {
+    background-image: url('../img/elina-hover.png');
+}
+.members__photo-lesch:hover {
+    background-image: url('../img/lesch-hover.png');
+}
+.members__photo-inna:hover {
+    background-image: url('../img/inna-hoveer.png');
+}
+.members__photo-alex:hover {
+    background-image: url('../img/alex-hover.png');
 }
 .members__description-name{
     font-family: Roboto;
@@ -72,6 +92,10 @@
     list-style-type: none;
     margin-left: 110px;
     width: 161px;
+    filter: grayscale(100%);
+}
+.partners__list-logo-link:hover {
+    filter: grayscale(0)
 }
 .partners__list-logo-link:nth-child(1) {
     flex-flow: column;
