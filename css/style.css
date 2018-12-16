@@ -64,11 +64,24 @@ button {
 .container {
     flex: 1 0 auto;
     margin: 0 auto;
+    min-width: 1100px;
     max-width: 1100px;
     display: flex;
     flex-flow: row;
 }
-
+.breadcrumbs {
+    color: #4b73b5;
+    font-family: Roboto-Italic;
+    font-size: 14px;
+    font-weight: 300; 
+    margin-bottom: 23px;
+}
+.breadcrumbs__crew--active {
+    color: #221f1f;
+}
+.breadcrumbs__feed--active {
+    color: #221f1f;
+}
 .title {
     color: #221f1f;
     font-family: Roboto;
@@ -82,9 +95,9 @@ button {
 
 .sidebar {
     flex: 1 0 auto;
-    width: 18%;
-    margin-left: 18px;
-    margin-top: 48px;
+    width: 17%;
+    margin-left: 8px;
+    margin-top: 41px;
     color: #221f1f;
     font-family: Roboto;
     font-size: 12px;

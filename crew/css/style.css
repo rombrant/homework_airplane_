@@ -1,21 +1,22 @@
 .page {
     display: flex;
     flex-direction: column;
-    margin-top: 54px;
+    margin-top: 38px;
+    max-width: 83%;
 }
 .crew {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     margin-bottom: 10px;
-    margin-top: 50px;
+    margin-top: 47px;
 }
 .members {
-    margin-bottom: 35px;
+    margin-bottom: 34px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 260px;
+    max-width: 260px;
     }
 .members__description {
     display: flex;
