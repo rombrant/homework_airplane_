@@ -387,7 +387,6 @@ button {
     float: left;
     margin-left: 5px;
     list-style-type: none;
-    color: #221f1f;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 700;
@@ -396,22 +395,23 @@ button {
     vertical-align: middle;
 }
 .pagination__controlls__list__item--active {
-    color: #221f1f;
     border-radius: 3px;
     border: 1px solid #4b73b5;
     background-color: #4b73b5;
 }
 .pagination__controlls__list__link {
-    color: #4b73b5;
+    color: #221f1f;
     font-family: Roboto;
     text-decoration: none;
 }
 
+.pagination__controlls__list__item:hover{
+    border-radius: 3px;
+    border: 1px solid #4b73b5;
+    background-color: #4b73b5;
+}
 .pagination__controlls__list__link:hover {
-    color: #221f1f;
-    border-radius: 5px;
- /*   border: 6px solid #4b73b5;
-    background-color: #4b73b5;*/
+    color: #ffffff;
 }
 
 

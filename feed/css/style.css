@@ -64,31 +64,29 @@
 }
 .title-feedback {
     margin-top: 30px;
-    text-align: start;
-    width: 600px;
-}
-.input-block {
-    display: flex;
-    flex-flow: inherit;
-    justify-content: space-between;
     margin-bottom: 30px;
-    width: 600px;
+    text-align: start;
+    min-width: 600px;
 }
-.feedback-form__social-block {
+.feedback-form__input-block {
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+.feedback-form__social-content {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
-.name-block {
-    display: flex;
-    flex-direction: column;
-    margin-right: 54px;
+.feedback-form__social-block {
+    max-width: 45%;
 }
-.feedback-form__input-name {
-    width: 270px;
+
+.feedback-form__social-input {
+    width: 96%;
     height: 45px;
-    margin-bottom: 41px;
     margin-top: 5px;
+    padding-left: 10px;
     border-style: none;
     opacity: 0.5;
     color: #221f1f;
@@ -96,65 +94,93 @@
     font-size: 17px;
     font-weight: 300;
 }
-.profile-block {
-    display: flex;
-    flex-direction: column;
-}
-.feedback-form__input-profile {
-    width: 270px;
-    height: 45px;
-    margin-bottom: 41px;
-    margin-top: 5px;
-    border-style: none;
-    opacity: 0.5;
-    color: #221f1f;
-    font-family: Roboto-light;
-    font-size: 17px;
-    font-weight: 300;
-}
+
 .feedback-form__comment-block {
-    display: inline-block;
-    width: 595px;
+    width: 100%;
 }
 .feedback-form__input-comment {
-    width: 595px;
+    min-width: 96%;
+    padding: 10px;
     height: 90px;
     margin-bottom: 20px;
     margin-top: 5px;
-    border: 1px solid #4b73b5;
+    border: none;
+    font-family: Roboto-light;
+    font-size: 17px;
+    font-weight: 300;
+    opacity: 0.5;
 }
 
-.admit-avatar {
-    display: flex;
-    flex-flow: column;
+.feedback-form__radio-block {
+	float: left;
 }
-.admit-avatar__question {
-    margin-bottom: 7px;
+
+.feedback-form__label-box {
+
+	margin-bottom: 7px;
 }
-.avatar-radio-block {
-    display: flex;
-    flex-flow: row;
+
+.feedback-form__radio-box {
+	display: inline-block;
+	margin-right: 21px;
+
 }
-.admit-avatar__answear {
-    display: flex;
-    flex-flow: row;
-    width: 60px;
-    height: 20px;
-    vertical-align: middle;
+
+
+.feedback-form__radio {
+
+	display: none;
+
 }
-.admit-avatar__yes {
-    float: left;
-    width: 20px;
-    height: 20px;
-    margin-right: 4px;
-    background-color: #4b73b5;
+
+
+.feedback-form__radio-text {
+	font-size: 14px;
+	color: #221f1f;
+	vertical-align: super;
+	position: absolute;
+	top: 5px;
+	left: 25px;
+} 
+
+ .feedback-form__radio-custom {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid #cacaca;
+	position: relative; 
+
 }
-.admit-avatar__no {
-    float: left;
-    width: 20px;
-    height: 20px;
-    margin-right: 4px;
-    background-color: #4b73b5;
+
+.feedback-form__radio:checked + .feedback-form__radio-custom:before {
+	content: "";
+	display: block;
+
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	bottom: 5px;
+
+	border-radius: 50%;
+	background-color: #4b73b5;
+
+}
+
+
+
+.feedback-form__radio:checked + .feedback-form__radio-custom {
+	border: 2px solid #4b73b5;
+
+
+}
+
+.feedback-form__radio:checked + .feedback-form__radio-custom .feedback-form__radio-text {
+	display: inline-block;
+	color: #4b73b5;
+
+
 }
 .send-form-button {
     float: right;
