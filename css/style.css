@@ -82,6 +82,10 @@ button {
 .breadcrumbs__feed--active {
     color: #221f1f;
 }
+.breadcrumbs__link {
+    text-decoration-line: none;
+    border-bottom: 1px solid #afc5ea;
+}
 .title {
     color: #221f1f;
     font-family: Roboto;
