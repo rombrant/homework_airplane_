@@ -23,7 +23,7 @@
 }
 
 .header__container {
-    width: 1100px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -64,7 +64,9 @@ button {
 .container {
     flex: 1 0 auto;
     margin: 0 auto;
-    width: 1100px;
+    max-width: 1100px;
+    display: flex;
+    flex-flow: row;
 }
 
 .title {
@@ -80,8 +82,7 @@ button {
 
 .sidebar {
     flex: 1 0 auto;
-    float: left;
-    width: 15%;
+    width: 18%;
     margin-left: 18px;
     margin-top: 48px;
     color: #221f1f;
@@ -92,6 +93,8 @@ button {
 }
 
 .menu__list {
+    display: flex;
+    flex-flow: column;
     list-style-type: none;
 }
 .menu__item {
@@ -100,7 +103,6 @@ button {
 
 .menu__link {
     padding-bottom: 0px;
-    color: #4b73b5;
     font-family: Roboto;
     font-size: 12px;
     text-transform: uppercase;
@@ -109,14 +111,16 @@ button {
     text-decoration: none;
 
 }
-
+.menu__link{
+    color: #4b73b5;
+}
 .menu__link:hover{
     color:#221f1f;
 }
 
 .menu__link:before {
     content: "";
-    padding-right: 5%;
+    padding-right: 10%;
     display: inline-block;
     vertical-align: sub;
     width: 24px;
@@ -125,7 +129,7 @@ button {
 }
 
 .menu__link--plane:before {
-    background-image: url('./../img/main_icon.png')
+    background-image: url('./../img/sidebar_main_blue.png')
 }
 
 .menu__link--feedback:before {
@@ -137,14 +141,22 @@ button {
     background-image: url('./../img/team_icon.png')
 }
 
-.menu__item--active .menu__link--plane {
-    color:#221f1f;
+.menu__item--active .menu__link--plane:before {
+    background-image: url('../img/main_icon.png');
 }
-
+.menu__item--active .menu__link--plane{
+    color: #221f1f;
+}
+.menu__item--active .menu__link--feedback::before {
+    filter: grayscale(100%);
+    background-image: url('../img/feed_icon.png');
+}
 .menu__item--active .menu__link--feedback {
-    color:#221f1f;
+    color: #221f1f;
 }
-
+.menu__item--active .menu__link--crew:before {
+    background-image: url('../img/crew_logo_black.png');
+}
 .menu__item--active .menu__link--crew {
     color:#221f1f;
 }
@@ -198,11 +210,13 @@ button {
 .tariffs {
     display: flex;
     flex-flow: row wrap;
+    justify-content: baseline;
 }
 
 .tariffs__offers {
-    width: 250px;
-    float: left;
+    display: flex;
+    flex-flow: column;
+    max-width: 250px;
     margin-left: 12px;
     margin-top: 23px;
     margin-bottom: 22px;
@@ -212,6 +226,8 @@ button {
 
 
 .tariffs__offers__information {
+    display: flex;
+    flex-flow: column;
     float: left;
     text-align: center;
     color: #221f1f;
@@ -219,6 +235,7 @@ button {
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
+    margin-left: 5px;
 }
 
 .tariffs__offers__information-name {
@@ -318,9 +335,10 @@ button {
 }
 
 .pagination {
-    float: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     margin-top: 30px;
-    margin-left: 200px;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -336,26 +354,36 @@ button {
 }
 
 .pagination__controlls {
-    position: relative;
-    float: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-left: 20px;
 }
 
 .pagination__controlls__list {
-    position: relative;
     float: left;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .pagination__controlls__list__item {
     float: left;
-    margin-left: 20px;
+    margin-left: 5px;
     list-style-type: none;
     color: #221f1f;
     font-family: Roboto;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
+    width: 20px;
+    vertical-align: middle;
 }
-
+.pagination__controlls__list__item--active {
+    color: #221f1f;
+    border-radius: 3px;
+    border: 1px solid #4b73b5;
+    background-color: #4b73b5;
+}
 .pagination__controlls__list__link {
     color: #4b73b5;
     font-family: Roboto;
@@ -369,16 +397,9 @@ button {
     background-color: #4b73b5;*/
 }
 
-.pagination__controlls__list__link--active {
-    color: #221f1f;
-    border-radius: 5px;
-    border: 6px solid #4b73b5;
-    background-color: #4b73b5;
-}
 
 .pagination__controlls__item__prev {
     float: left;
-    margin-left: 20px;
     text-decoration: none;
     list-style-type: none;
     color: #221f1f;
@@ -395,7 +416,6 @@ button {
 
 .pagination__controlls__item__next {
     float: left;
-    margin-left: 20px;
     text-decoration: none;
     list-style-type: none;
     color: #221f1f;
@@ -416,7 +436,7 @@ button {
 }
 
 .footer__container {
-    width: 1100px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
