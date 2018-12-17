@@ -31,46 +31,26 @@
     width: 160px;
     height: 160px;
 }
-.members__photo {
-    margin: 0 auto;
-    width: 160px;
-    height: 160px;
-}
+
 .members__photo-item {
     margin: 0 auto;
     position: absolute;
-    background-image: url('../img/spritesheet.png');
+    width: 160px;
+    height: 160px;
+    background-color: rgba(75, 115, 181, .6);
+    border-radius: 50%;
     background-repeat: no-repeat;
+    text-align: center;
+
+    color: #fff;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 165px;
+    transition-duration: 0.7s;
 }
-.members:nth-child(1) .members__photo-item{
-    width: 160px;
-    height: 160px;
-    background-position: -175px -175px;
-}
-.members:nth-child(2) .members__photo-item{
-    width: 160px;
-    height: 160px;
-    background-position: -345px -345px;
-}
-.members:nth-child(3) .members__photo-item{
-    width: 160px;
-    height: 160px;
-    background-position: -345px -175px;
-}
-.members:nth-child(4) .members__photo-item{
-    width: 160px;
-    height: 160px;
-    background-position: -175px -345px;
-}
-.members:nth-child(5) .members__photo-item{
-    width: 160px;
-    height: 160px;
-    background-position: -5px -345px;
-}
-.members:nth-child(6) .members__photo-item{
-    width: 160px;
-    height: 160px;
-    background-position: -515px -345px;
+.members__description {
+    height: 65%;
 }
 .members__photo-item:hover {
     opacity: 0;
@@ -117,9 +97,11 @@
     margin-left: 66px;
     width: 161px;
     filter: grayscale(100%);
+    transition-duration: 0.7s;
 }
 .partners__list-logo-link:hover {
-    filter: grayscale(0)
+    filter: grayscale(0);
+    transition-duration: 0.7s;
 }
 .partners__list-logo-link:nth-child(1) {
     flex-flow: column;

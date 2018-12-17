@@ -23,6 +23,9 @@
 }
 
 .header__container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -37,7 +40,6 @@
 
 
 .header__container-contacts {  
-    float: right;
     margin-right: 20px; 
     margin-top: 20px;
 }
@@ -179,7 +181,7 @@ button {
 }
 
 .main__content {
-    /*width: 85%;*/
+    width: 85%;
     margin-top: 14px;
     min-height: 100%;
     display: flex;
@@ -452,18 +454,17 @@ button {
 }
 
 .footer__container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto;
 }
 
 .footer__container-social {
-    flex: 1 0 auto;
-    display: flex;
-    flex-flow: row;
-    justify-content:flex-end;
-    min-width: 160px;
+    float: right;
+    width: 160px;
     margin-top: 20px;
-    margin-right: 20px;
     color: #ffffff;
 }
 
@@ -487,20 +488,13 @@ button {
 }
 
 .logo {
-    display:block;
-    width:100%;
-    flex 1 0 auto;
     margin-top: 25px;
-    margin-left: 270px;
 }
 
 .footer__container-info {
-    display: flex;
-    flex-flow: row;
-    Justify-content: flex-start;
-    min-width: 236px;
+    float: left;
+    width: 236px;
     margin-top: 15px;
-    margin-left: 18px;
     color: #ffffff;
     font-family: Roboto-light;
     font-size: 14px;

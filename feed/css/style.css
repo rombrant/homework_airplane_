@@ -39,9 +39,9 @@
     background-image: url('../img/background_faq.png');
 }
 .faq__info {
-    margin-bottom: 45px;
-    margin-top: 45px;
-    width: 45%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 670px;
     color: #ffffff;
     font-family: Roboto-light;
     font-size: 18px;
@@ -99,6 +99,7 @@
 
 .feedback-form__comment-block {
     width: 100%;
+    margin-bottom: 15px;
 }
 .feedback-form__input-comment {
     min-width: 96%;
