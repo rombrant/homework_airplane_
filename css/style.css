@@ -457,8 +457,11 @@ button {
 }
 
 .footer__container-social {
-    float: right;
-    width: 160px;
+    flex: 1 0 auto;
+    display: flex;
+    flex-flow: row;
+    justify-content:flex-end;
+    min-width: 160px;
     margin-top: 20px;
     margin-right: 20px;
     color: #ffffff;
@@ -484,14 +487,18 @@ button {
 }
 
 .logo {
-    float: left;
+    display:block;
+    width:100%;
+    flex 1 0 auto;
     margin-top: 25px;
     margin-left: 270px;
 }
 
 .footer__container-info {
-    float: left;
-    width: 236px;
+    display: flex;
+    flex-flow: row;
+    Justify-content: flex-start;
+    min-width: 236px;
     margin-top: 15px;
     margin-left: 18px;
     color: #ffffff;
