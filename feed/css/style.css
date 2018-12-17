@@ -39,8 +39,9 @@
     background-image: url('../img/background_faq.png');
 }
 .faq__info {
+    margin-bottom: 45px;
     margin-top: 45px;
-    width: 670px;
+    width: 45%;
     color: #ffffff;
     font-family: Roboto-light;
     font-size: 18px;
