@@ -462,7 +462,6 @@ button {
 }
 
 .footer__container-social {
-    float: right;
     width: 160px;
     margin-top: 20px;
     color: #ffffff;
@@ -492,7 +491,6 @@ button {
 }
 
 .footer__container-info {
-    float: left;
     width: 236px;
     margin-top: 15px;
     color: #ffffff;
