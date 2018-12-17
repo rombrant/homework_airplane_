@@ -10,14 +10,17 @@
     justify-content: space-around;
     margin-bottom: 10px;
     margin-top: 47px;
+
+
 }
 .members {
     margin-bottom: 34px;
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    flex-flow: row wrap;
+    justify-content: center;
     max-width: 260px;
-    }
+    
+}
 .members__description {
     display: flex;
     flex-flow: row wrap;
@@ -28,33 +31,70 @@
     margin-top: 25px;
 }
 
-.members__photo {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+.photo {
+    display: block;
+    width: 160px;
     height: 160px;
 }
-
-img.photo:hover {
+.members__photo {
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+}
+.members__photo-item {
+    margin: 0 auto;
+    position: absolute;
+    background-image: url('../img/spritesheet.png');
+    background-repeat: no-repeat;
+    transition-duration: 0.5s;
+}
+.members:nth-child(1) .members__photo-item{
+    width: 160px;
+    height: 160px;
+    background-position: -175px -175px;
+}
+.members:nth-child(2) .members__photo-item{
+    width: 160px;
+    height: 160px;
+    background-position: -345px -345px;
+}
+.members:nth-child(3) .members__photo-item{
+    width: 160px;
+    height: 160px;
+    background-position: -345px -175px;
+}
+.members:nth-child(4) .members__photo-item{
+    width: 160px;
+    height: 160px;
+    background-position: -175px -345px;
+}
+.members:nth-child(5) .members__photo-item{
+    width: 160px;
+    height: 160px;
+    background-position: -5px -345px;
+}
+.members:nth-child(6) .members__photo-item{
+    width: 160px;
+    height: 160px;
+    background-position: -515px -345px;
+}
+.members:nth-child(1) .members__photo-item:hover{
     opacity: 0;
 }
-.members__photo-yurii:hover {
-    background-image: url('../img/yrii-hover.png');
+.members:nth-child(2) .members__photo-item:hover{
+    opacity: 0;
 }
-.members__photo-elena:hover {
-    background-image: url('../img/elena-hover.png');
+.members:nth-child(3) .members__photo-item:hover{
+    opacity: 0;
 }
-.members__photo-elina:hover {
-    background-image: url('../img/elina-hover.png');
+.members:nth-child(4) .members__photo-item:hover{
+    opacity: 0;
 }
-.members__photo-lesch:hover {
-    background-image: url('../img/lesch-hover.png');
+.members:nth-child(5) .members__photo-item:hover{
+    opacity: 0;
 }
-.members__photo-inna:hover {
-    background-image: url('../img/inna-hoveer.png');
-}
-.members__photo-alex:hover {
-    background-image: url('../img/alex-hover.png');
+.members:nth-child(6) .members__photo-item:hover{
+    opacity: 0;
 }
 .members__description-name{
     font-family: Roboto;
