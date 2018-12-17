@@ -22,11 +22,6 @@
     
 }
 .members__description {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: center;
     text-align: center;
     margin-top: 25px;
 }
@@ -46,7 +41,6 @@
     position: absolute;
     background-image: url('../img/spritesheet.png');
     background-repeat: no-repeat;
-    transition-duration: 0.5s;
 }
 .members:nth-child(1) .members__photo-item{
     width: 160px;
@@ -78,24 +72,11 @@
     height: 160px;
     background-position: -515px -345px;
 }
-.members:nth-child(1) .members__photo-item:hover{
+.members__photo-item:hover {
     opacity: 0;
+    transition-duration: 0.5s;
 }
-.members:nth-child(2) .members__photo-item:hover{
-    opacity: 0;
-}
-.members:nth-child(3) .members__photo-item:hover{
-    opacity: 0;
-}
-.members:nth-child(4) .members__photo-item:hover{
-    opacity: 0;
-}
-.members:nth-child(5) .members__photo-item:hover{
-    opacity: 0;
-}
-.members:nth-child(6) .members__photo-item:hover{
-    opacity: 0;
-}
+
 .members__description-name{
     font-family: Roboto;
     font-size: 18px;
