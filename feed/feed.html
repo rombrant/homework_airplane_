@@ -28,15 +28,15 @@
     
                         <ul class="menu__list">
                             <li class="menu__item">
-                                <a href="../index.html" class="menu__link menu__link--plane">главная</a>
+                                <a href="../index.html" class="menu__link ">главная</a>
                             </li>
     
                             <li class="menu__item menu__item--active">
-                                <span class="menu__link menu__link--feedback">отзывы</span>
+                                <span class="menu__link">отзывы</span>
                             </li>
     
                             <li class="menu__item ">
-                                    <a href="../crew/crew.html" class="menu__link menu__link--crew">экипаж</a>
+                                    <a href="../crew/crew.html" class="menu__link">экипаж</a>
                         
                             </li>
                         </ul>
@@ -149,25 +149,27 @@
                             <textarea form="feedback-form-id" class="feedback-form__input-comment" placeholder="Мне понравилось" name="comment" ></textarea>
                         </label>
                     </div>
-                    <div class="feedback-form__radio-block">
-                            <div class="feedback-form__label-box"><label id="feedback-form-radio" class="feedback-form__label">Отображать фото в отзыве?</label></div>
-        
-        
-                            <label class="feedback-form__radio-box" tabindex="0">
-                                <input type="radio" name="radio-comments" value="yes" class="feedback-form__radio" checked>
-                                <span class="feedback-form__radio-custom">
-                        <span  class="feedback-form__radio-text   feedback-form__radio-text_checked" >Да</span> </span>
-                                
-                                   </label>
-        
-                            <label class="feedback-form__radio-box" tabindex="0">
-                                <input type="radio" name="radio-comments" value="no" class="feedback-form__radio">
-                                <span class="feedback-form__radio-custom"><span 	class="feedback-form__radio-text"> Нет</span></span>
-                                
-                                </label>
-                    </div>
-                    <div class="feedback-form__send-form">
-                        <button class="send-form-button" type="submit"><span class="send-form-button-name">отправить</span></button>
+                    <div class="feedback-form__buttons">
+                        <div class="feedback-form__radio-block">
+                                <div class="feedback-form__label-box"><label id="feedback-form-radio" class="feedback-form__label">Отображать фото в отзыве?</label></div>
+            
+            
+                                <label class="feedback-form__radio-box" tabindex="0">
+                                    <input type="radio" name="radio-comments" value="yes" class="feedback-form__radio" checked>
+                                    <span class="feedback-form__radio-custom">
+                            <span  class="feedback-form__radio-text   feedback-form__radio-text_checked" >Да</span> </span>
+                                    
+                                    </label>
+            
+                                <label class="feedback-form__radio-box" tabindex="0">
+                                    <input type="radio" name="radio-comments" value="no" class="feedback-form__radio">
+                                    <span class="feedback-form__radio-custom"><span 	class="feedback-form__radio-text"> Нет</span></span>
+                                    
+                                    </label>
+                        </div>
+                        <div class="feedback-form__send-form">
+                            <button class="send-form-button" type="submit"><span class="send-form-button-name">отправить</span></button>
+                        </div>
                     </div>
                 </div>
             </form>

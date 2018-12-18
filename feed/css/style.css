@@ -127,6 +127,11 @@
     font-weight: 300;
     opacity: 0.5;
 }
+.feedback-form__buttons {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
 
 .feedback-form__radio-block {
 	float: left;
@@ -200,8 +205,6 @@
 
 }
 .send-form-button {
-    float: right;
-    width: 155px;
     height: 45px;
     background-color: #4b73b5;
     color: #ffffff;
@@ -211,13 +214,20 @@
     line-height: 35px;
     text-transform: uppercase;
     letter-spacing: 2.2px;
-    vertical-align: middle;
+    transition: .7s;
+}
+.send-form-button:hover {
+    transition: .7s;
+    background-color: #cacaca;
+    color: #4b73b5;
+    cursor: pointer;
 }
 
 .send-form-button-name {
     height: 30px;
     vertical-align: middle;
     text-align: center;
+    padding: 20px;
 }
 .send-form-button-name::after {
     content: "";

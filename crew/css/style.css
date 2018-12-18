@@ -55,6 +55,7 @@
 .members__photo-item:hover {
     opacity: 0;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 .members__description-name{
@@ -102,6 +103,7 @@
 .partners__list-logo-link:hover {
     filter: grayscale(0);
     transition-duration: 0.7s;
+    cursor: pointer;
 }
 .partners__list-logo-link:nth-child(1) {
     flex-flow: column;
