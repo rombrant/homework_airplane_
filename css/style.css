@@ -259,7 +259,7 @@
 }
 
 .main__content {
-    width: 71%;
+    max-width: 69%;
     margin-top: 41px;
     min-height: 100%;
     display: flex;
@@ -340,7 +340,7 @@
 .tariffs__offers {
     display: flex;
     flex-flow: column;
-    min-width: 250px;
+    max-width: 250px;
     border-radius: 25px;
     transition-duration: .8s;
 }
@@ -377,7 +377,8 @@
     line-height: 30px;
     margin-left: 5px;
     max-width: 250px;
-    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .tariffs__offers__information-name {
@@ -403,7 +404,7 @@
     color: #202020;
     font-family: Roboto-light;
     font-size: 30px;
-    width: 120px;
+    width: 100px;
     height: 30px;
     line-height: 175px;
 }
@@ -636,10 +637,14 @@
 .logo {
     margin-top: 25px;
 }
+.logo__img {
+    margin-right: 20px;
+}
 
 .footer__container-info {
     width: 236px;
     margin-top: 15px;
+    margin-left: 18px;
     color: #ffffff;
     font-family: Roboto-light;
     font-size: 14px;
