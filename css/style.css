@@ -67,11 +67,11 @@
     border-style: none;
 }
 .header__container-contacts-button-content {
+    position: relative;
     width: 103px;
     height: 14px;
-    opacity: 0.7;
     color: #ffffff;
-    font-family: Roboto-light;
+    font-family: Roboto;
     font-size: 14px;
     font-weight: 300;
     line-height: 14px;
@@ -114,8 +114,20 @@
     margin-right: -15px;
     float: right;
 }
+.header__container-contacts-button-content::after {
+    content: "";
+    position: relative;
+    width: 160px;
+    height: 24px;
+    margin-top: -3px;
+    margin-right: 0px;
+    float: right;
+}
 .header__container-contacts-button-dinner {
     color: #221f1f;
+}
+.header__container-contacts-button:hover .header__container-contacts-button-content {
+    color: #c9d5e9;
 }
 .header__container-contacts__block:hover .header__container-contacts-button-graphics {
     margin-left: 45px;
