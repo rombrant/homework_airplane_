@@ -8,7 +8,7 @@
 }
 
 .wrapper {
-    min-width:1100px;
+    min-width:1200px;
     min-height: 100%;
     margin: 0 auto;
     display: flex;
@@ -26,7 +26,7 @@
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -123,8 +123,8 @@
 .container {
     flex: 1 0 auto;
     margin: 0   auto;
-    max-width: 1100px;
-    min-width: 1100px;
+    max-width: 1200px;
+    min-width: 1200px;
     display: flex;
     flex-flow: row;
 }
@@ -160,12 +160,14 @@
     font-weight: 700;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
 .sidebar {
     flex: 1 0 auto;
-    width: 27%;
-    margin-left: 18px;
+    width: 23%;
+    margin-left: 1%;
     margin-top: 41px;
     color: #221f1f;
     font-family: Roboto;
@@ -259,8 +261,9 @@
 }
 
 .main__content {
-    max-width: 69%;
+    max-width: 74%;
     margin-top: 41px;
+    margin-left: 1.5%;
     min-height: 100%;
     display: flex;
     flex-flow: column wrap;
@@ -339,8 +342,8 @@
 
 .tariffs__offers {
     display: flex;
-    flex-flow: column;
-    max-width: 250px;
+    flex-flow: column wrap;
+    max-width: 272px;
     border-radius: 25px;
     transition-duration: .8s;
 }
@@ -376,9 +379,6 @@
     font-weight: 300;
     line-height: 30px;
     margin-left: 5px;
-    max-width: 250px;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 .tariffs__offers__information-name {
@@ -450,7 +450,6 @@
     max-width: 33%;
     margin-top: 50px;
     list-style-type: none;
-    border-bottom: 1px solid #f5f5f5;
 }
 
 .feeds__news__item--active {
@@ -589,7 +588,7 @@
 .footer {
     flex: 0 0 auto;
     height: 80px;
-    min-width: 1100px;
+    min-width: 1200px;
     width: 100%;
     margin-top: 40px;
     background-color: #4b73b5;
@@ -599,7 +598,7 @@
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -607,8 +606,8 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
-    min-width: 160px;
-    margin-top: 20px;
+    max-width: 160px;
+    margin: auto;
     color: #ffffff;
 }
 
@@ -630,10 +629,60 @@
 }
 
 .footer__container-social__head__list__item {
-    float: left;
+    display: flex;
     margin-right: 9px;
 }
-
+.footer__container-social__head-list__item__link {
+    width: 20px;
+    height: 20px;
+}
+.footer__container-social__head-list__item__link__img-social {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: .6s;
+}
+.footer__container-social__head-list__item__link__img-social:hover {
+    background-color: #d2def3;
+    transition: .6s;
+}
+.footer__container-social__head-list__item__link__img-social:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    width: 15px;
+    height: 13px;
+    background: center center no-repeat;
+    background-image: url('../img/social-sprite.png');
+    background-repeat: no-repeat;
+}
+.footer__container-social__head__list__item:nth-child(1) .footer__container-social__head-list__item__link__img-social::before {
+    background-position: -43px -24px;
+    height: 7px;
+}
+.footer__container-social__head__list__item:nth-child(2) .footer__container-social__head-list__item__link__img-social::before {
+    background-position: -5px -5px;
+    width: 7px;
+}
+.footer__container-social__head__list__item:nth-child(3) .footer__container-social__head-list__item__link__img-social::before {
+    background-position: -21px -5px;
+    height: 9px;
+}
+.footer__container-social__head__list__item:nth-child(4) .footer__container-social__head-list__item__link__img-social::before {
+    background-position: -46px -5px;
+    width: 11px;
+    height: 9px;
+}
+.footer__container-social__head__list__item:nth-child(5) .footer__container-social__head-list__item__link__img-social:before {
+    background-position: -21px -24px;
+    width: 12px;
+    height: 9px;
+}
 .logo {
     margin-top: 25px;
 }
