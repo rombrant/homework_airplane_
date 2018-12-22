@@ -114,15 +114,7 @@
     margin-right: -15px;
     float: right;
 }
-.header__container-contacts-button-content::after {
-    content: "";
-    position: relative;
-    width: 160px;
-    height: 24px;
-    margin-top: -3px;
-    margin-right: 0px;
-    float: right;
-}
+
 .header__container-contacts-button-dinner {
     color: #221f1f;
 }
