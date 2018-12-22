@@ -48,8 +48,8 @@
       vertical-align: sub;
       background: center center no-repeat;
       margin-left: 5%;
-      background-image: url('../img/intro-sprite.png');
-      background-position: -30px -5px;
+      background-image: url('../img/icons.png');
+      background-position: -30px -61px;
   }
   
   .welcome__logo-btn:hover {
@@ -59,7 +59,7 @@
     cursor: pointer;
   }
   .welcome__logo-btn:hover::after {
-    background-position: -5px -5px;
+    background-position: -5px -61px;
   }
   .welcome {
     animation: ball 1s;

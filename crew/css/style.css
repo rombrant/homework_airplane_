@@ -1,7 +1,7 @@
 .page {
     display: flex;
     flex-direction: column;
-    margin-top: 19px;
+    margin-top: 21px;
     max-width: 74%;
     margin-left: 1.5%;
 }
@@ -103,8 +103,12 @@
     list-style-type: none;
     max-width: 161px;
     margin-bottom: 18px;
+    transition: .6s;
+    filter: grayscale(1);
 }
 .partners__list-logo-link:hover {
+    transition: .6s;
+    filter: grayscale(0);
     cursor: pointer;
 }
 .partners__list-logo-link:nth-child(1) {
